@@ -3,13 +3,13 @@
         {
             "Name": "i0",
             "Description": "",
-            "Path": "data/images/P37_S29-CRC01",
+            "Path": "images/out",
             "Width": 78417,
             "Height": 57360,
             "MaxLevel": 7
         }
     ],
-    "Header": "View an [H&E lens with multimodal lensing](#s=1w=0) a customized group of CyCIF channels. Click the settings icon to colorize or hide channels.",
+    "Header": "Click the settings icon to colorize or hide channels.",
     "Rotation": 0,
     "Layout": {
         "Grid": [
@@ -24,26 +24,8 @@
             "Description": "",
             "Waypoints": [
                 {
-                    "Name": "Multimodal Lensing",
-                    "Description": "---\n# H&E lens over group of CyCIF markers",
-                    "Arrows": [],
-                    "Overlays": [],
-                    "Group": "Overview",
-                    "Masks": [],
-                    "ActiveMasks": [],
-                    "Zoom": 1,
-                    "Pan": [
-                        0.5,
-                        0.5
-                    ],
-                    "Lensing": {
-                      "Group": "H&E",
-                      "Rad": 150
-                    }
-                },
-                {
-                    "Name": "Multimodal",
-                    "Description": "---\n# group of CyCIF markers",
+                    "Name": "Overview",
+                    "Description": "---\n# Group of CyCIF markers",
                     "Arrows": [],
                     "Overlays": [],
                     "Group": "Overview",
@@ -145,56 +127,42 @@
     "Masks": [],
     "Groups": [
         {
-            "Name": "H&E",
+            "Name": "Overview",
             "Colors": [
-                "ff00ff",
-                "800080"
-            ],
-            "Channels": [
-                "Hematoxylin",
-                "Eosin"
-            ],
-            "Descriptions": [
-                "Hematoxylin brightfield",
-                "Eosin brightfield"
-            ]
-        },
-        {
-            "Name": "Autofluorescence",
-            "Colors": [
-                "ffffff",
-                "7fd1ff",
+                "e0e0e0",
                 "ffff00",
-                "ff0000"
+                "ff8000",
+                "00ff00"
             ],
             "Channels": [
                 "Hoechst",
-                "Autofluorescence",
                 "CD31",
-                "alpha-SMA"
+                "CD45",
+                "Pan-CK"
             ],
             "Descriptions": [
-                "_",
-                "_",
-                "_",
-                "_"
+                "nuclear marker",
+                "Endothelium (blood vessels)",
+                "All immune cells",
+                "Normal epithelium",
+                "blood vessels & subepithelial myofibroblasts"
             ]
         },
         {
-            "Name": "Immune 3",
+            "Name": "Immune 1",
             "Colors": [
                 "ffffff",
-                "ff4298",
-                "ffb500",
-                "00ff00",
-                "007fff"
+                "ff9b00",
+                "ff00ff",
+                "0000ff",
+                "00ff00"
             ],
             "Channels": [
                 "Hoechst",
-                "CD4",
-                "FOXP3",
-                "CD8a",
-                "E-cadherin"
+                "CD45RO",
+                "CD20",
+                "CD3e",
+                "PD-1"
             ],
             "Descriptions": [
                 "_",
@@ -229,20 +197,20 @@
             ]
         },
         {
-            "Name": "Immune 1",
+            "Name": "Immune 3",
             "Colors": [
                 "ffffff",
-                "ff9b00",
-                "ff00ff",
-                "0000ff",
-                "00ff00"
+                "ff4298",
+                "ffb500",
+                "00ff00",
+                "007fff"
             ],
             "Channels": [
                 "Hoechst",
-                "CD45RO",
-                "CD20",
-                "CD3e",
-                "PD-1"
+                "CD4",
+                "FOXP3",
+                "CD8a",
+                "E-cadherin"
             ],
             "Descriptions": [
                 "_",
@@ -253,25 +221,39 @@
             ]
         },
         {
-            "Name": "Overview",
+            "Name": "Autofluorescence",
             "Colors": [
-                "e0e0e0",
+                "ffffff",
+                "7fd1ff",
                 "ffff00",
-                "ff8000",
-                "00ff00"
+                "ff0000"
             ],
             "Channels": [
                 "Hoechst",
+                "Autofluorescence",
                 "CD31",
-                "CD45",
-                "Pan-CK"
+                "alpha-SMA"
             ],
             "Descriptions": [
-                "nuclear marker",
-                "Endothelium (blood vessels)",
-                "All immune cells",
-                "Normal epithelium",
-                "blood vessels & subepithelial myofibroblasts"
+                "_",
+                "_",
+                "_",
+                "_"
+            ]
+        },
+        {
+            "Name": "H&E",
+            "Colors": [
+                "ff00ff",
+                "800080"
+            ],
+            "Channels": [
+                "Hematoxylin",
+                "Eosin"
+            ],
+            "Descriptions": [
+                "Hematoxylin brightfield",
+                "Eosin brightfield"
             ]
         }
     ]
